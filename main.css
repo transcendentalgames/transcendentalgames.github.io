@@ -1,0 +1,81 @@
+img {
+    image-orientation: from-image;
+}
+
+img.mainlogo {
+    image-orientation: from-image;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+body {
+    background-color: azure;
+}
+
+a {
+}
+
+p {}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid rgb(147, 84, 2);
+    background-color: rgb(249, 223, 189);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border-bottom: black;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 25%;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: "Bookman Old Style";
+    font-size: 1.5vw;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(247, 208, 158);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(247, 190, 118);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Transcendental Games</title>
+</head>
+<body>
+
+<a href="index.html">
+    <img class="mainlogo" src = "images/logo.png">
+</a>
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Games')" id="defaultOpen">Games</button>
+    <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+    <button class="tablinks" onclick="openTab(event, 'News')">News</button>
+    <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+<!-- Tab content -->
+<div id="Games" class="tabcontent">
+    <p>This is going to be  grid of icons because I think that would look the best, clicking on one will bring you to a new page, filled with information about that game.</p>
+</div>
+
+<div id="About" class="tabcontent">
+    <h1>Our Mission: To spread acceptance and awareness of the LGTBQ+ community through interactive media.</h1>
+    <p>Transcendental Games is a college student operated game studio
+        in Worcester, Massachusetts. Our focus is on creating applied games
+        that represent the LGBTQ+ popultion and educate players on the
+        issues that they face. We believe in the power of games and their
+        ability to touch people.</p>
+    <h2>Members</h2>
+    <h3>Leo Bunyea (He/Him/His)</h3>
+    <p>Leo is the co-founder of Transcendental games. He serves as the company's lead designer and writer. He is an aggressive trans rights advocate and loves his cat, Oliver more than Italian food.</p>
+    <p>Link to professional portfolio</p>
+    <h3>Natalie Bloniarz (She/Her/Hers)</h3>
+    <p>Short bio</p>
+    <h3>Kate Olguin (She/Her/Hers)</h3>
+    <img src="images/kate.jpg"/>
+    <p>Kate Olguin is your friendly neighborhood lesbian and Lead Artist on Gotta Go. When she's not drawing stylized toilet logos, she's composing music or doodling giant monsters. "Likes" include dogs, scarves, and remembering to save her Photoshop files. You can find her aimless ramblings on her twitter @DragonDirigible, and find more of her work at kateolguin.com.</p>
+</div>
+
+<div id="News" class="tabcontent">
+    <h1>There is nothing exciting to report quite yet! Keep your eyes peeled for upcoming announcements.</h1>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <h1>What can we do for you?</h1>
+    <h2>Do you have a business inquiry? How about a burning question for one of our employees? Look no further!</h2>
+    <p>Please direct professional inquiries to our email address: transcendentalgames@gmail.com</p>
+    <p>We can also be reached on our various social media platforms:</p>
+    <p>Links as images</p>
+</div>
+
+<script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
