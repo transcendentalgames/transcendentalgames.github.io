@@ -19,7 +19,17 @@ img.gamecover{
 }
 
 img.person {
-    image-orientation: 90deg;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+img.social {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
 }
 
 .coveroverlay {
@@ -47,7 +57,7 @@ img.person {
 }
 
 .covertext {
-    color: black;
+    color: purple;
     font-size: 50px;
     position: absolute;
     top: 50%;
@@ -59,18 +69,39 @@ img.person {
     text-transform: uppercase;
 }
 
+.aboutcontainer{
+    margin-left: 300px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.infofield {
+    margin: 0px 300px 50px 300px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
 body {
     background-color: whitesmoke;
 }
 
 p {
     font-family: "Verdana";
-    color: mediumpurple;
+    color: purple;
 }
 
 h1, h2, h3 {
     font-family: "Verdana";
     color: purple;
+    text-transform:uppercase;
+}
+
+h1 {
+    text-align: center;
 }
 
 /* Style the tab */
@@ -92,6 +123,7 @@ h1, h2, h3 {
     text-transform: uppercase;
     font-family: "Verdana";
     font-size: 1.5vw;
+    color: purple;
 }
 
 /* Change background color of buttons on hover */
